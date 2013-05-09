@@ -1,0 +1,31 @@
+"""
+Staging settings. You should update the following:
+
+	DOMAIN
+	REDIRECT_EMAIL_RECIPIENTS
+	REDIRECT_SMS
+
+"""
+
+from {{ project_name }}.conf.settings import *
+
+### TURBIA SETTINGS ###########################################################
+
+TURBIA.update({
+	'DOMAIN': 'localhost:8000',
+	'REDIRECT_EMAIL_RECIPIENTS': [
+		('Admin', 'admin@3030.com.au'),
+	],
+	'REDIRECT_SMS': None, # Must be False or a mobile number (string).
+	'SEND_EMAIL': True,
+	'SEND_SMS': True,
+})
+
+### DJANGO SETTINGS ###########################################################
+
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+
+ALLOWED_HOSTS.extend([
+	TURBIA['DOMAIN'],
+])

@@ -1,0 +1,18 @@
+*.pyc
+/*.egg-info/
+/.coverage
+/dev.db
+/dev.db-journal
+/docs/_build/
+/htmlcov/
+/private/exports/
+/private/imports/
+/private/logs/*.log
+/private/logs/*.log.*
+/private/pages/
+/private/run/
+/public/.htaccess
+/public/cache/
+/public/media/
+/public/static/
+/{{ project_name }}/conf/settings.py

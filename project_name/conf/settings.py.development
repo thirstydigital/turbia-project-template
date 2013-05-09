@@ -1,0 +1,60 @@
+"""
+Development settings. You should update the following:
+
+	REDIRECT_EMAIL_RECIPIENTS
+	REDIRECT_SMS
+
+"""
+
+from {{ project_name }}.conf.settings import *
+
+### TURBIA SETTINGS ###########################################################
+
+TURBIA.update({
+	'REDIRECT_EMAIL_RECIPIENTS': [
+		('Admin', 'admin@3030.com.au'),
+	],
+	'REDIRECT_SMS': None, # Must be False or a mobile number (string).
+#	'SEND_EMAIL': True,
+#	'SEND_SMS': True,
+})
+
+### DJANGO SETTINGS ###########################################################
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+DATABASES.update({
+	'default': {
+		'ENGINE': 'django.db.backends.sqlite3',
+		'NAME': os.path.join(PROJECT_ROOT, 'dev.db'),
+	}
+})
+
+EMAIL_HOST = 'mail.internode.on.net'
+LOGGING['loggers']['turbia']['handlers'] = ['console']
+
+ALLOWED_HOSTS.extend([
+	TURBIA['DOMAIN'],
+])
+
+### DJANGO DEBUG TOOLBAR SETTINGS #############################################
+
+DEBUG_TOOLBAR_CONFIG.update({
+#	'INTERCEPT_REDIRECTS': True,
+#	'SHOW_TOOLBAR_CALLBACK': lambda r: True,
+})
+
+MIDDLEWARE_CLASSES.extend([
+	'debug_toolbar.middleware.DebugToolbarMiddleware',
+])
+
+# backwards compatibility.
+DATABASE_ENGINE = DATABASES['default']['ENGINE']
+
+### PAGES SETTINGS ############################################################
+
+PAGES = {
+	'MINIFY-CSS': False,
+	'MINIFY-JS': False,
+}

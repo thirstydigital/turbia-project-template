@@ -1,0 +1,32 @@
+"""
+Production settings. You should update the following:
+
+	DOMAIN
+
+"""
+
+from {{ project_name }}.conf.settings import *
+
+### TURBIA SETTINGS ###########################################################
+
+TURBIA.update({
+	'DOMAIN': 'localhost:8000',
+	'REDIRECT_EMAIL': False,
+	'SEND_EMAIL': True,
+	'SEND_SMS': True,
+})
+
+### DJANGO SETTINGS ###########################################################
+
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+
+ALLOWED_HOSTS.extend([
+	TURBIA['DOMAIN'],
+])
+
+WSGI_APPLICATION = '%s.conf.newrelic_wsgi.application' % TURBIA['PROJECT']
+
+### NEW RELIC SETTINGS ########################################################
+
+NEWRELIC_ENV = 'production'
