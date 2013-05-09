@@ -1,5 +1,6 @@
 *.pyc
 /*.egg-info/
+/*/settings.py
 /.coverage
 /dev.db
 /dev.db-journal
@@ -15,4 +16,3 @@
 /public/cache/
 /public/media/
 /public/static/
-/{{ project_name }}/conf/settings.py
