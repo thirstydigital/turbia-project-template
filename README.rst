@@ -53,8 +53,8 @@ If you are going to use the python debugger, install ``ipdb``::
 
 Configure settings for the local environment::
 
-    $ cp {{ project_name }}conf/settings.py.development {{ project_name }}settings.py
-    $ vi {{ project_name }}settings.py
+    $ cp {{ project_name }}/conf/settings.py.development {{ project_name }}/settings.py
+    $ vi {{ project_name }}/settings.py
 
 If you are deploying to a staging or production environment, copy the staging
 or production settings instead.
