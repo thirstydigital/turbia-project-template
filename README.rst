@@ -1,3 +1,22 @@
+How to Use
+==========
+
+This is a turbia project template, for use with the `startproject` management
+command. Create a new skeleton project like this:
+
+1.  Create skeleton project::
+
+        $ django-admin.py startproject --template \
+        https://github.com/thirstydigital/turbia-project-template/archive/master.zip \
+        $MYPROJECT ~/projects/$MYPROJECT
+
+2.  Update this ``README.rst`` file. Remove the ``How to Use`` section and
+    update the ``Overview`` section.
+
+3.  Create a private repository on BitBucket (use SourceTree) and push an
+    initial commit.
+
+
 Overview
 ========
 
