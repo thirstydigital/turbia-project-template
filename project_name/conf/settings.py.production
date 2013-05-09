@@ -5,7 +5,7 @@ Production settings. You should update the following:
 
 """
 
-from {{ project_name }}.conf.settings import *
+from {{ project_name }}.conf.settings_base import *
 
 ### TURBIA SETTINGS ###########################################################
 
