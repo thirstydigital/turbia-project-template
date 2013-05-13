@@ -143,6 +143,8 @@ INSTALLED_APPS = [
 #	'threads',
 #	'trak',
 #	'uniquecodes',
+
+	'{{ project_name }}',
 ]
 
 MIDDLEWARE_CLASSES = [
