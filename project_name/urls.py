@@ -6,6 +6,6 @@ urlpatterns = patterns('{{ project_name }}.views',
 )
 
 urlpatterns += patterns('',
-#	url(r'^admin/', include('{{ project_name }}.admin.views', namespace='{{ project_name }}-admin', app_name='{{ project_name }}'),
+#	url(r'^admin/', include('{{ project_name }}.admin.views'),
 #	url(r'^(.*)$', 'pages.views.page', name='page'),
 )
