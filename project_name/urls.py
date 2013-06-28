@@ -7,5 +7,5 @@ urlpatterns = patterns('{{ project_name }}.views',
 
 urlpatterns += patterns('',
 #	url(r'^admin/', include('{{ project_name }}.admin.views'),
-#	url(r'^(.*)$', 'pages.views.page', {'prefix': '{{ project_name }}'}, name='page'),
+#	url(r'^(.*)$', 'pages.views.page', {'prefix': '{{ project_name }}'}, name='{{ project_name }}_page'),
 )
