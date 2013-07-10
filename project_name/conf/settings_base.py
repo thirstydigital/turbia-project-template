@@ -18,19 +18,21 @@ TURBIA = {
 		'ROOT_URL',
 	],
 	'DOCUMENT_ROOT': os.path.join(PROJECT_ROOT, 'public'),
-	'DOMAIN': 'localhost:8000',
+#	'DOMAIN': 'localhost:8000',
+#	'MASTER_PASSWORD': None,
 	'PROJECT': os.path.basename(PROJECT_ROOT),
 	'PROJECT_ROOT': PROJECT_ROOT,
 	'RECAPTCHA': {
 		'PRIVATE_KEY': '',
 		'PUBLIC_KEY': '',
 	},
-	'REDIRECT_EMAIL': True,
-	'REDIRECT_EMAIL_RECIPIENTS': [],
-	'REDIRECT_SMS': None, # Must be None or a mobile number (string).
+#	'REDIRECT_EMAIL': True,
+#	'REDIRECT_EMAIL_RECIPIENTS': [],
+#	'REDIRECT_SMS': True,
+#	'REDIRECT_SMS_RECIPIENTS': [],
 	'ROOT_URL': '/',
-	'SEND_EMAIL': False,
-	'SEND_SMS': False,
+#	'SEND_EMAIL': False,
+#	'SEND_SMS': False,
 	'SMS': {
 		'default_gateway': 'dialect-interactive',
 		'dialect-interactive': {

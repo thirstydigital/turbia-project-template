@@ -1,9 +1,8 @@
 """
-Development settings. You should update the following:
+Development settings. By default:
 
-	REDIRECT_EMAIL_RECIPIENTS
-	REDIRECT_SMS
-
+- Emails and SMS are NOT sent, they are only logged to the console.
+- The master password is "abc123".
 """
 
 from {{ project_name }}.conf.settings_base import *
@@ -11,12 +10,18 @@ from {{ project_name }}.conf.settings_base import *
 ### TURBIA SETTINGS ###########################################################
 
 TURBIA.update({
+	'DOMAIN': 'localhost:8000',
+	'MASTER_PASSWORD': 'abc123',
+	'REDIRECT_EMAIL': True,
 	'REDIRECT_EMAIL_RECIPIENTS': [
-		('Admin', 'admin@3030.com.au'),
+		'noreply@3030.com.au',
 	],
-	'REDIRECT_SMS': None, # Must be False or a mobile number (string).
-#	'SEND_EMAIL': True,
-#	'SEND_SMS': True,
+	'REDIRECT_SMS': True,
+	'REDIRECT_SMS_RECIPIENTS': [
+		'',
+	],
+	'SEND_EMAIL': False,
+	'SEND_SMS': False,
 })
 
 ### DJANGO SETTINGS ###########################################################
@@ -37,20 +42,6 @@ LOGGING['loggers']['turbia']['handlers'] = ['console']
 ALLOWED_HOSTS.extend([
 	TURBIA['DOMAIN'],
 ])
-
-### DJANGO DEBUG TOOLBAR SETTINGS #############################################
-
-DEBUG_TOOLBAR_CONFIG.update({
-#	'INTERCEPT_REDIRECTS': True,
-#	'SHOW_TOOLBAR_CALLBACK': lambda r: True,
-})
-
-MIDDLEWARE_CLASSES.extend([
-	'debug_toolbar.middleware.DebugToolbarMiddleware',
-])
-
-# backwards compatibility.
-DATABASE_ENGINE = DATABASES['default']['ENGINE']
 
 ### PAGES SETTINGS ############################################################
 

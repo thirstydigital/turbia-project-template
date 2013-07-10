@@ -1,9 +1,14 @@
 """
-Staging settings. You should update the following:
+Staging settings. By default:
+
+- Emails and SMS are sent to the configured redirect recipients.
+- The master password is "abc123".
+
+You MUST update the following settings:
 
 	DOMAIN
 	REDIRECT_EMAIL_RECIPIENTS
-	REDIRECT_SMS
+	REDIRECT_SMS_RECIPIENTS
 
 """
 
@@ -13,10 +18,15 @@ from {{ project_name }}.conf.settings_base import *
 
 TURBIA.update({
 	'DOMAIN': 'localhost:8000',
+	'MASTER_PASSWORD': 'abc123',
+	'REDIRECT_EMAIL': True,
 	'REDIRECT_EMAIL_RECIPIENTS': [
-		('Admin', 'admin@3030.com.au'),
+		'noreply@3030.com.au',
 	],
-	'REDIRECT_SMS': None, # Must be False or a mobile number (string).
+	'REDIRECT_SMS': True,
+	'REDIRECT_SMS_RECIPIENTS': [
+		'',
+	],
 	'SEND_EMAIL': True,
 	'SEND_SMS': True,
 })
