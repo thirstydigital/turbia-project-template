@@ -20,8 +20,8 @@ TURBIA.update({
 	'REDIRECT_SMS_RECIPIENTS': [
 		'',
 	],
-	'SEND_EMAIL': False,
-	'SEND_SMS': False,
+	'SEND_EMAIL': True,
+	'SEND_SMS': True,
 })
 
 ### DJANGO SETTINGS ###########################################################
