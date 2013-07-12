@@ -46,7 +46,7 @@ Clone project in your ``projects`` folder::
 Create ``virtualenv`` and install dependencies::
 
     $ cd {{ project_name }}
-    $ mkvirtualenv --distribute --no-site-packages -a "$PWD" -r requirements.txt {{ project_name }}
+    $ mkvirtualenv --distribute --no-site-packages -a "$PWD" -r requirements-live.txt {{ project_name }}
 
 If you are going to use PostgreSQL, install ``psycopg2``::
 
