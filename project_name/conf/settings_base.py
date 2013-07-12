@@ -116,7 +116,7 @@ INSTALLED_APPS = [
 	'django.contrib.staticfiles',
 
 #	'ajax_validation',
-	'debug_toolbar',
+#	'debug_toolbar',
 #	'haystack',
 #	'reversion',
 	'south',
