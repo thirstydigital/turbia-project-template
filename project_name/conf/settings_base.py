@@ -307,10 +307,11 @@ LOGGING = {
 }
 
 # django.contrib.auth
-#AUTHENTICATION_BACKENDS = [
-#	'django.contrib.auth.backends.ModelBackend',
+AUTHENTICATION_BACKENDS = [
+	'django.contrib.auth.backends.ModelBackend',
 #	'accounts.backends.ProfileBackend',
-#]
+	'turbia.auth.MasterPasswordBackend',
+]
 
 # django.contrib.sites
 SITE_ID = 1
