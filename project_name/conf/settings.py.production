@@ -19,7 +19,7 @@ TURBIA.update({
 	'MASTER_PASSWORD': None,
 	'REDIRECT_EMAIL': False,
 	'REDIRECT_EMAIL_RECIPIENTS': [
-		'admin@3030.com.au',
+		'noreply@3030.com.au',
 	],
 	'REDIRECT_SMS': False,
 	'REDIRECT_SMS_RECIPIENTS': [
