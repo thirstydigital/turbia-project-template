@@ -29,6 +29,7 @@ webtest
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-proxy.git@master#egg=turbia-proxy
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-ratings.git@master#egg=turbia-ratings
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-reports.git@master#egg=turbia-reports
+# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-shorten.git@master#egg=turbia-shorten
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-sitesettings.git@master#egg=turbia-sitesettings
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-smooth.git@master#egg=turbia-smooth
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-threads.git@master#egg=turbia-threads
