@@ -1,8 +1,19 @@
 """
 Development settings. By default:
 
-- Emails and SMS are NOT sent, they are only logged to the console.
-- The master password is "abc123".
+	- The master password is "abc123".
+	- Email and SMS redirection is enabled.
+	- DEBUG mode is enabled.
+	- An SQLite database is configured.
+	- Console logging is enabled.
+	- CSS and JS pages are not minified.
+
+You MUST update the following settings:
+
+	DOMAIN
+	REDIRECT_EMAIL_RECIPIENTS
+	REDIRECT_SMS_RECIPIENTS
+
 """
 
 from {{ project_name }}.conf.settings_base import *

@@ -1,8 +1,9 @@
 """
 Staging settings. By default:
 
-- Emails and SMS are sent to the configured redirect recipients.
-- The master password is "abc123".
+	- The master password is "abc123".
+	- Email and SMS redirection is enabled.
+	- DEBUG mode is disabled.
 
 You MUST update the following settings:
 

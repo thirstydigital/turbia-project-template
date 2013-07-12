@@ -1,10 +1,12 @@
 """
 Production settings. By default:
 
-- Emails and SMS are sent to their intended recipients.
-- There is no master password.
+	- There is no master password.
+	- Email and SMS redirection is disabled.
+	- DEBUG mode is disabled.
+	- The New Relic agent is enabled.
 
-You MUST update the following settings:
+You MUST update:
 
 	DOMAIN
 
