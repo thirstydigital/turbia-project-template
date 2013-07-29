@@ -30,8 +30,8 @@ urlpatterns = patterns('',
 	url(r'^turbia/',       include('turbia.urls')),
 #	url(r'^uniquecodes/',  include('uniquecodes.urls')),
 
-#	url(r'^email/(\d+)-(\w+)/$', 'turbia.views.email',                     name='email'),
-	url(r'^static/(.*)$',        'django.contrib.staticfiles.views.serve', name='static'),
+#	url(r'^emails/(\d+)-(\w+)/$', 'turbia.views.email',        name='turbia_email'),
+	url(r'^static/(.*)$',         'turbia.views.serve_static', name='static'),
 
 	multiurl(
 		url(r'^', include('{{ project_name }}.urls')),
