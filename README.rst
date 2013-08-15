@@ -4,17 +4,36 @@ How to Use
 This is a turbia project template, for use with the `startproject` management
 command. Create a new skeleton project like this:
 
-1.  Create skeleton project::
+1.  Create a ``$PROJECT`` variable, so we can copy and paste the following
+    commands::
+
+        $ export PROJECT=PROJECTNAME
+
+2.  Create skeleton project::
 
         $ cd ~/projects
         $ django-admin.py startproject -e bat,development,ini,production,py,rst,staging -n Makefile \
         --template https://github.com/thirstydigital/turbia-project-template/archive/master.zip $PROJECT
 
-2.  Update this ``README.rst`` file. Remove the ``How to Use`` section and
-    update the ``Overview`` section.
+3.  Update the ``README.rst`` file. Remove the ``How to Use`` section and update
+    the ``Overview`` section::
 
-3.  Create a private repository on BitBucket (use SourceTree) and push an
-    initial commit.
+        $ cd $PROJECT
+        $ vi README.rst
+
+4.  Make ``manage.py`` executable::
+
+        $ chmod 755 manage.py
+
+5.  Create a private repository on BitBucket. Use their website, or SourceTree.
+
+6.  Initialize the project as Git repository and push an initial commit::
+
+        $ git init
+        $ git add -A
+        $ git commit -m 'Initial commit.'
+        $ git remote add origin git@bitbucket.org:thirstydigital/$PROJECT.git
+        $ git push
 
 
 Overview
