@@ -95,8 +95,8 @@ MANAGERS = [
 #TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
-	'.production.3030.com.au',
-	'.staging.3030.com.au',
+	'.3030.com.au',
+	'.localhost',
 ]
 
 DATABASES = {
