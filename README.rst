@@ -16,15 +16,6 @@ command. Create a new skeleton project like this:
 3.  Create a private repository on BitBucket (use SourceTree) and push an
     initial commit.
 
-4.  After following the installation instructions (below), freeze your
-    requirements::
-
-        $ pip freeze > requirements-live.txt
-
-5.  Replace the frozen requirement for your project (a VCS link) with ``-e .``,
-    which will install the project working copy instead of downloading a second
-    copy of the project and installing it into the ``virtualenv``.
-
 
 Overview
 ========
@@ -46,7 +37,7 @@ Clone project in your ``projects`` folder::
 Create ``virtualenv`` and install dependencies::
 
     $ cd {{ project_name }}
-    $ mkvirtualenv --distribute --no-site-packages -a "$PWD" -r requirements-live.txt {{ project_name }}
+    $ mkvirtualenv --distribute --no-site-packages -a "$PWD" -r requirements.txt {{ project_name }}
 
 If you are going to use PostgreSQL, install ``psycopg2``::
 
