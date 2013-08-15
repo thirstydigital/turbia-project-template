@@ -24,14 +24,17 @@ urlpatterns = patterns('',
 #	url(r'^proxy/',        include('proxy.urls')),
 #	url(r'^ratings/',      include('ratings.urls')),
 #	url(r'^reports/',      include('reports.urls')),
+#	url(r'^shorten/',      include('shorten.urls')),
 #	url(r'^sitesettings/', include('sitesettings.urls')),
 #	url(r'^smooth/',       include('smooth.urls')),
 #	url(r'^trak/',         include('trak.urls')),
 	url(r'^turbia/',       include('turbia.urls')),
 #	url(r'^uniquecodes/',  include('uniquecodes.urls')),
 
-#	url(r'^emails/(\d+)-(\w+)/$', 'turbia.views.email',        name='turbia_email'),
-	url(r'^static/(.*)$',         'turbia.views.serve_static', name='static'),
+	url(r'^e-(\d+)-(\w+)/$', 'turbia.views.email', name='turbia_email'),
+#	url(r'^s-(\w{3,})/$',    'shorten.views.link', name='shorten_link'),
+
+	url(r'^static/(.*)$', 'django.contrib.staticfiles.views.serve', name='static'),
 
 	multiurl(
 		url(r'^', include('{{ project_name }}.urls')),
