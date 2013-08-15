@@ -19,7 +19,9 @@ TURBIA = {
 	],
 	'DOCUMENT_ROOT': os.path.join(PROJECT_ROOT, 'public'),
 #	'DOMAIN': 'localhost:8000',
-#	'MASTER_PASSWORD': None,
+	'MASTER_PASSWORDS': {
+#		'abc123': lambda u: not (u.is_staff or u.is_superuser),
+	},
 	'PROJECT': os.path.basename(PROJECT_ROOT),
 	'PROJECT_ROOT': PROJECT_ROOT,
 	'RECAPTCHA': {
@@ -308,7 +310,6 @@ LOGGING = {
 
 # django.contrib.auth
 AUTHENTICATION_BACKENDS = [
-	'django.contrib.auth.backends.ModelBackend',
 #	'accounts.backends.ProfileBackend',
 	'turbia.auth.MasterPasswordBackend',
 ]

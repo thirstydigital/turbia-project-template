@@ -22,7 +22,6 @@ from {{ project_name }}.conf.settings_base import *
 
 TURBIA.update({
 	'DOMAIN': 'localhost:8000',
-	'MASTER_PASSWORD': 'abc123',
 	'REDIRECT_EMAIL': True,
 	'REDIRECT_EMAIL_RECIPIENTS': [
 		'noreply@3030.com.au',
@@ -33,6 +32,9 @@ TURBIA.update({
 	],
 	'SEND_EMAIL': True,
 	'SEND_SMS': True,
+})
+TURBIA['MASTER_PASSWORDS'].update({
+	'abc123': None,
 })
 
 ### DJANGO SETTINGS ###########################################################
