@@ -142,6 +142,7 @@ INSTALLED_APPS = [
 #	'proxy',
 #	'ratings',
 #	'reports',
+#	'shorten',
 #	'sitesettings',
 #	'smooth',
 #	'threads',
