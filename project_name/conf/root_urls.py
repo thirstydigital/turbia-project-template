@@ -7,6 +7,8 @@ handler500 = 'turbia.views.server_error_request_context'
 admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^', include('{{ project_name }}.urls')),
+
 	url(r'^django-admin/doc/', include('django.contrib.admindocs.urls')),
 	url(r'^django-admin/',     include(admin.site.urls)),
 
@@ -37,8 +39,6 @@ urlpatterns = patterns('',
 	url(r'^static/(.*)$', 'django.contrib.staticfiles.views.serve', name='static'),
 
 	multiurl(
-		url(r'^', include('{{ project_name }}.urls')),
-
 		url(r'^(.*)$', 'pages.views.page',   name='page'),
 		url(r'^(.*)$', 'turbia.views.serve', name='serve'),
 
