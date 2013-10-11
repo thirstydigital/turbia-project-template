@@ -219,7 +219,26 @@ TEMPLATE_LOADERS = [
 WSGI_APPLICATION = '%s.conf.wsgi.application' % TURBIA['PROJECT']
 
 ROOT_URLCONF = '%s.conf.root_urls' % TURBIA['PROJECT']
-SECRET_KEY = '{{ secret_key }}'
+
+# Get the secret key from a hidden file that should never be committed to
+# version control. If it doesn't exist, create it.
+SECRET_FILE = os.path.join(PROJECT_ROOT, 'secret.txt')
+try:
+	SECRET_KEY = open(SECRET_FILE).read().strip()
+except IOError:
+	try:
+		import string, random
+		SECRET_CHARSET = ''.join([
+			string.digits, string.ascii_letters, string.punctuation])
+		SECRET_KEY = ''.join(random.choice(SECRET_CHARSET) for i in range(50))
+		secret = open(SECRET_FILE, 'w')
+		secret.write(SECRET_KEY)
+		secret.close()
+		os.chmod(SECRET_FILE, 0400)
+	except IOError:
+		raise Exception(
+			'Please create a %s file with 50 random characters to set your '
+			'secret key.' % SECRET_FILE)
 
 LANGUAGE_CODE = 'en-au'
 TIME_ZONE = 'Australia/Sydney'
