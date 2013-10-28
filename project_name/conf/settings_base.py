@@ -149,7 +149,7 @@ INSTALLED_APPS = [
 #	'trak',
 #	'uniquecodes',
 
-	'{{ project_name }}',
+	TURBIA['PROJECT'],
 ]
 
 MIDDLEWARE_CLASSES = [
