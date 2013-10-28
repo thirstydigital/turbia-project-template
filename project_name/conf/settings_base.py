@@ -217,8 +217,10 @@ TEMPLATE_LOADERS = [
 ]
 
 WSGI_APPLICATION = '%s.conf.wsgi.application' % TURBIA['PROJECT']
-
 ROOT_URLCONF = '%s.conf.root_urls' % TURBIA['PROJECT']
+
+# Detect HTTPS requests that have been through a proxy.
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
 
 # Get the secret key from a hidden file that should never be committed to
 # version control. If it doesn't exist, create it.
