@@ -23,6 +23,7 @@ webtest
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-genericforms.git@master#egg=turbia-genericforms
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-grinner.git@master#egg=turbia-grinner
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-locations.git@master#egg=turbia-locations
+# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-mailout.git@master#egg=turbia-mailout
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-motivate.git@master#egg=turbia-motivate
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-paypal.git@master#egg=turbia-paypal
