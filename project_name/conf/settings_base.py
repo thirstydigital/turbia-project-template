@@ -81,41 +81,6 @@ COOOEEE = {
 	},
 }
 
-### DEMO SETTINGS #############################################################
-
-def CALLBACK(request):
-	"""
-	Returns True when conditions for skipping demo check are met.
-	"""
-	if request.user.is_superuser:
-		return True
-
-	exts = [
-		'css',
-		'gif',
-		'ico',
-		'jpg',
-		'js',
-		'png',
-	]
-	ext = request.path.split('.')[-1]
-	if ext in exts:
-		return True
-
-	apps = ['admin']
-	urls = ['demo_login', 'turbia_login']
-	try:
-		resolver_match = resolve(request.path)
-	except Http404:
-		return False
-	return (resolver_match.app_name in apps or resolver_match.url_name in urls)
-
-DEMO = {
-	'ENABLE': False,
-	'TOKEN': '_turbia_demo_token',
-	'CALLBACK': CALLBACK,
-}
-
 ### DJANGO SETTINGS ###########################################################
 
 ADMINS = [
