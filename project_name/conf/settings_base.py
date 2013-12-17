@@ -306,6 +306,8 @@ STATICFILES_FINDERS = [
 #	'django.contrib.staticfiles.finders.DefaultStorageFinder',
 ]
 
+CSRF_FAILURE_VIEW = 'turbia.views.csrf_failure'
+
 LOGIN_REDIRECT_URL = '/turbia/'
 LOGIN_URL = '/turbia/login/'
 LOGOUT_URL = '/turbia/logout/'
