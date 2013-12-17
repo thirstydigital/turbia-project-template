@@ -1,3 +1,4 @@
+django-debug-toolbar
 django-nose
 django-webtest
 newrelic
@@ -6,6 +7,7 @@ nose-progressive
 south
 sphinx
 webtest
+pytz==2013b
 
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@master#egg=turbia
@@ -18,6 +20,7 @@ webtest
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-coooeee.git@master#egg=turbia-coooeee
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-cron.git@master#egg=turbia-cron
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-data.git@master#egg=turbia-data
+# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-demo.git@master#egg=turbia-demo
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-dukebox.git@master#egg=turbia-dukebox
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-fulfilment.git@master#egg=turbia-fulfilment
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-genericforms.git@master#egg=turbia-genericforms
@@ -36,4 +39,5 @@ webtest
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-threads.git@master#egg=turbia-threads
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-trak.git@master#egg=turbia-trak
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-uniquecodes.git@master#egg=turbia-uniquecodes
+# -e git+ssh://git@github.com/thirstydigital/django-multiurl.git@turbia#egg=django_multiurl
 # -e git+ssh://git@github.com/thirstydigital/django.git@turbia/1.5.x#egg=django
