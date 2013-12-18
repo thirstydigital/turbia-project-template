@@ -1,0 +1,30 @@
+"""
+Deployment settings for {{ project_name }}. Rename to ``settings.py``.
+Do not commit to version control.
+"""
+
+from {{ project_name }}.conf.settings_base import *
+
+### TURBIA ####################################################################
+
+TURBIA.update({
+	'DOMAIN': 'localhost:8000',
+})
+
+### DJANGO ####################################################################
+
+#DATABASES.update({
+#	'default': {
+#		'ENGINE': 'django.db.backends.sqlite3',
+#		'NAME': os.path.join(PROJECT_ROOT, 'dev.db'),
+#	}
+#})
+
+ALLOWED_HOSTS.extend([
+	TURBIA['DOMAIN'],
+])
+
+### DJANGO DEBUG TOOLBAR ######################################################
+
+# Backwards compatibility.
+DATABASE_ENGINE = DATABASES['default']['ENGINE']
