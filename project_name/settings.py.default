@@ -15,6 +15,7 @@ TURBIA.update({
 
 #DATABASES.update({
 #	'default': {
+#		'ATOMIC_REQUESTS': True,
 #		'ENGINE': 'django.db.backends.sqlite3',
 #		'NAME': os.path.join(PROJECT_ROOT, 'dev.db'),
 #	}
