@@ -139,6 +139,9 @@ AUTHENTICATION_BACKENDS.extend([
 #	'accounts.backends.ProfileBackend',
 ])
 
+# django.contrib.sessions
+SESSION_SERIALIZER = 'turbia.contrib.sessions.serializers.JSONSerializer'
+
 # django.middleware.cache.CacheMiddleware
 #CACHE_BACKEND = 'file://%s/cache' % PROJECT_ROOT
 #CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
