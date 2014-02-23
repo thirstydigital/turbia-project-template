@@ -11,7 +11,7 @@ sys.path.append(os.path.expanduser('~/projects/settings'))
 
 # Add host level settings to local scope as defaults.
 locals().update(vars(importlib.import_module(
-	'settings.%s' % socket.gethostname().split('.')[0])))
+	'settings.%s' % socket.gethostname().split('.')[0].replace('-', '_'))))
 
 ### TURBIA ####################################################################
 
