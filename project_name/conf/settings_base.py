@@ -149,7 +149,10 @@ SESSION_SERIALIZER = 'turbia.contrib.sessions.serializers.JSONSerializer'
 
 ### HAYSTACK ##################################################################
 
-#HAYSTACK_SITECONF = 'conf.search_sites'
-#HAYSTACK_SEARCH_ENGINE = 'solr' # solr, woosh, xapian, dummy
-#HAYSTACK_SOLR_URL = 'http://127.0.0.1:8983/solr'
-#HAYSTACK_WHOOSH_PATH = os.path.join(PROJECT_ROOT, 'whoosh', 'index')
+#HAYSTACK_CONNECTIONS = {
+#	'default': {
+#		'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+#		'URL': 'http://127.0.0.1:8983/solr',
+#	},
+#}
+#HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
