@@ -75,6 +75,7 @@ INSTALLED_APPS.extend([
 #	'reports',
 #	'shorten',
 #	'sitesettings',
+	'textid',
 #	'smooth',
 #	'threads',
 #	'trak',
