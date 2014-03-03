@@ -4,10 +4,10 @@ django-webtest
 newrelic
 nose-cov
 nose-progressive
+pytz
 south
 sphinx
 webtest
-pytz==2013b
 
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia-textid.git@master#egg=turbia-textid
