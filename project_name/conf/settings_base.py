@@ -142,6 +142,7 @@ LOGGING['handlers']['file']['filename'] = \
 # django.contrib.auth
 AUTHENTICATION_BACKENDS.extend([
 #	'accounts.backends.ProfileBackend',
+#	'trak.auth.AuthBackend',
 ])
 
 # django.contrib.sessions
