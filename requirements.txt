@@ -12,6 +12,7 @@ pytz==2013b
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@master#egg=turbia
 -e git+ssh://git@github.com/thirstydigital/django-multiurl.git@turbia#egg=django_multiurl
+-e git+ssh://git@github.com/thirstydigital/django-orm-fixtures.git@master#egg=django-orm-fixtures
 -e git+ssh://git@github.com/thirstydigital/django.git@turbia/1.6.x#egg=django
 
 -e .
@@ -40,4 +41,5 @@ pytz==2013b
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-trak.git@master#egg=turbia-trak
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-uniquecodes.git@master#egg=turbia-uniquecodes
 # -e git+ssh://git@github.com/thirstydigital/django-multiurl.git@turbia#egg=django_multiurl
+# -e git+ssh://git@github.com/thirstydigital/django-orm-fixtures.git@master#egg=django-orm-fixtures
 # -e git+ssh://git@github.com/thirstydigital/django.git@turbia/1.5.x#egg=django

@@ -52,6 +52,7 @@ INSTALLED_APPS.extend([
 #	'ajax_validation',
 #	'debug_toolbar',
 #	'haystack',
+	'orm_fixtures',
 #	'reversion',
 #	'tagging',
 
