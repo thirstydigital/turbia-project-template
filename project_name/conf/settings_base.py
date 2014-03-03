@@ -60,6 +60,7 @@ INSTALLED_APPS.extend([
 #	'coooeee',
 #	'cron',
 #	'data',
+#	'demo',
 #	'dukebox',
 #	'fulfilment',
 #	'genericforms',
@@ -89,6 +90,8 @@ MIDDLEWARE_CLASSES.extend([
 	# Must come after any middleware that encodes the response, such as
 	# GZipMiddleware.
 #	'debug_toolbar.middleware.DebugToolbarMiddleware',
+
+#	'demo.middleware.DemoMiddleware',
 
 	# Must come after AuthenticationMiddleware.
 #	'motivate.middleware.DivisionMiddleware',
