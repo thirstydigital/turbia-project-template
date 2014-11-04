@@ -1,7 +1,6 @@
-from django.conf.urls import include, patterns, url
+from django.conf import settings
+from django.conf.urls import include, patterns, url, static
 from django.contrib import admin
-from django.http import Http404
-from multiurl import ContinueResolving, multiurl
 
 handler500 = 'turbia.views.server_error_request_context'
 admin.autodiscover()
@@ -22,7 +21,7 @@ urlpatterns = patterns('',
 #	url(r'^grinner/',      include('grinner.urls')),
 #	url(r'^mailout/',      include('mailout.urls')),
 #	url(r'^motivate/',     include('motivate.urls')),
-	url(r'^pages/',        include('pages.urls')),
+#	url(r'^pages/',        include('pages.urls')),
 #	url(r'^paypal/',       include('paypal.urls')),
 #	url(r'^proxy/',        include('proxy.urls')),
 #	url(r'^reports/',      include('reports.urls')),
@@ -35,11 +34,8 @@ urlpatterns = patterns('',
 	url(r'^e-(\d+)-(\w+)/$', 'turbia.views.email', name='turbia_email'),
 #	url(r'^s-(\w{3,})/$',    'shorten.views.link', name='shorten_link'),
 
-	url(r'^static/(.*)$', 'django.contrib.staticfiles.views.serve', name='static'),
-
-	multiurl(
-		url(r'^(.*)$', 'pages.views.page',   name='page'),
-		url(r'^(.*)$', 'turbia.views.serve', name='serve'),
-
-		catch=(Http404, ContinueResolving)),
 )
+
+if settings.DEBUG:
+	urlpatterns += static.static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+	urlpatterns += static.static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,3 +1,4 @@
+django==1.6
 django-debug-toolbar
 django-nose
 django-webtest
@@ -10,12 +11,9 @@ sphinx
 webtest
 
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
--e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@master#egg=turbia
--e git+ssh://git@github.com/thirstydigital/django-multiurl.git@turbia#egg=django_multiurl
--e git+ssh://git@github.com/thirstydigital/django-orm-fixtures.git@master#egg=django-orm-fixtures
--e git+ssh://git@github.com/thirstydigital/django.git@turbia/1.6.x#egg=django
+-e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@decouple_patched_django#egg=turbia
 
--e .
+# -e .
 
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-accounts.git@master#egg=turbia-accounts
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-coooeee.git@master#egg=turbia-coooeee
