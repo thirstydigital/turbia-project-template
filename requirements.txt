@@ -13,7 +13,7 @@ webtest
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@decouple_patched_django#egg=turbia
 
-# -e .
+-e .
 
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-accounts.git@master#egg=turbia-accounts
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-coooeee.git@master#egg=turbia-coooeee
