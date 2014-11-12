@@ -1,14 +1,8 @@
 django==1.6
 django-debug-toolbar
-django-nose
-django-webtest
 newrelic
-nose-cov
-nose-progressive
 pytz
 south
-sphinx
-webtest
 
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@decouple_patched_django#egg=turbia
 
