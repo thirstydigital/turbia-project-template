@@ -34,7 +34,6 @@ urlpatterns = patterns('',
 	url(r'^e-(\d+)-(\w+)/$', 'turbia.views.email', name='turbia_email'),
 #	url(r'^s-(\w{3,})/$',    'shorten.views.link', name='shorten_link'),
 
-	url(r'^(.*)$', 'pages.views.page',   name='page'),
 
 )
 
