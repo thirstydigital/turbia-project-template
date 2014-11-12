@@ -10,7 +10,6 @@ south
 sphinx
 webtest
 
--e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
 -e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@decouple_patched_django#egg=turbia
 
 -e .
