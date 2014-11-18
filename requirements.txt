@@ -4,34 +4,10 @@ newrelic
 pytz
 south
 
--e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@decouple_patched_django#egg=turbia
+-e git+ssh://git@bitbucket.org/thirstydigital/turbia.git@master#egg=turbia
 
 -e .
 
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-accounts.git@master#egg=turbia-accounts
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-coooeee.git@master#egg=turbia-coooeee
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-cron.git@master#egg=turbia-cron
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-data.git@master#egg=turbia-data
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-demo.git@master#egg=turbia-demo
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-dukebox.git@master#egg=turbia-dukebox
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-fulfilment.git@master#egg=turbia-fulfilment
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-genericforms.git@master#egg=turbia-genericforms
+
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-grinner.git@master#egg=turbia-grinner
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-locations.git@master#egg=turbia-locations
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-mailout.git@master#egg=turbia-mailout
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-motivate.git@master#egg=turbia-motivate
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-pages.git@master#egg=turbia-pages
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-paypal.git@master#egg=turbia-paypal
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-proxy.git@master#egg=turbia-proxy
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-ratings.git@master#egg=turbia-ratings
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-reports.git@master#egg=turbia-reports
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-shorten.git@master#egg=turbia-shorten
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-sitesettings.git@master#egg=turbia-sitesettings
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-smooth.git@master#egg=turbia-smooth
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-textid.git@master#egg=turbia-textid
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-threads.git@master#egg=turbia-threads
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-trak.git@master#egg=turbia-trak
-# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-uniquecodes.git@master#egg=turbia-uniquecodes
-# -e git+ssh://git@github.com/thirstydigital/django-multiurl.git@turbia#egg=django_multiurl
-# -e git+ssh://git@github.com/thirstydigital/django-orm-fixtures.git@master#egg=django-orm-fixtures
-# -e git+ssh://git@github.com/thirstydigital/django.git@turbia/1.6.x#egg=django
+
