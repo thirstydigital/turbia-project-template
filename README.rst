@@ -12,7 +12,7 @@ command. Create a new skeleton project like this:
 2.  Create skeleton project::
 
         $ cd ~/projects
-        $ django-admin.py startproject -e bat,default,ini,py,rst -n Makefile \
+        $ django-admin.py startproject -e bat,default,local,staging,production,ini,py,rst -n Makefile \
         --template https://github.com/thirstydigital/turbia-project-template/archive/master.zip $PROJECT
 
 3.  Update the ``README.rst`` file. Remove the ``How to Use`` section and update
