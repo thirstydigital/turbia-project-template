@@ -1,4 +1,5 @@
 django==1.6
+fabric
 django-debug-toolbar
 newrelic
 pytz
@@ -9,4 +10,5 @@ south
 -e .
 
 # -e git+ssh://git@bitbucket.org/thirstydigital/turbia-grinner.git@master#egg=turbia-grinner
-
+# -e git+ssh://git@bitbucket.org/thirstydigital/turbia-genericforms.git@master#egg=turbia-genericforms
+# python-dateutil
