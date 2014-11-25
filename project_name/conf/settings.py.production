@@ -29,3 +29,5 @@ ALLOWED_HOSTS.extend([
 
 # Backwards compatibility.
 DATABASE_ENGINE = DATABASES['default']['ENGINE']
+
+NEWRELIC_ENV = 'production'
